@@ -54,6 +54,13 @@ function changeValue () {
 
 };
 
+function herzberuehrt () {
+
+alert(unescape("Du%20hast%20mein%20Herz%20ber%FChrt"));
+
+
+}
+
 /*function alert1 () {
 
 alert('Jo passt');
