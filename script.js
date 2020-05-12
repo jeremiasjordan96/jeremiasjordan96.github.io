@@ -1,6 +1,33 @@
 var Counter = 1;
 var UInput;
 
+/*
+// hat sich nicht bewährt
+var txtRequest = new XMLHttpRequest();
+
+txtRequest.open('GET', 'http://photooftheday.jeremiasjordan.de/counter/counter.txt', true);
+txtRequest.onerror = function() {
+  console.log('There was an error!');
+};
+
+txtRequest.send();
+var externalCounter = txtRequest.responseText;
+
+var infoRequest = new XMLHttpRequest();
+
+infoRequest.open('GET', 'http://photooftheday.jeremiasjordan.de/info/' + '24' + '.txt', true);
+
+infoRequest.addEventListener('load', function(event) {
+  if (request.status >= 200 && request.status < 300) {
+     console.log(infoRequest.responseText);
+  } else {
+     console.warn(infoRequest.statusText, infoRequest.responseText);
+  }
+});
+
+
+*/
+
 /* function simpleRe () {
 
   document.getElementById("sbutton").textContent = "Success!";
