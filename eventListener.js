@@ -11,7 +11,7 @@ var i;
 
 const infoContentReq = new XMLHttpRequest();
 
-infoContentReq.open('GET', 'http://photooftheday.jeremiasjordan.de/info.php', true);
+infoContentReq.open('GET', 'https://photooftheday.jeremiasjordan.de/info.php', true);
 infoContentReq.send();
 infoContentReq.onload = function () {
   if (infoContentReq.responseText != 'false') {
