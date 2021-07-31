@@ -324,6 +324,10 @@ a {
 
 }
 
+.infopanel .cursive {
+  font-style: italic;
+}
+
 .infopanel:hover .infocontent {
 
   flex: 3;
