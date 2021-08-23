@@ -63,12 +63,12 @@ function changeValue () {
   switch(Counter){
 
     case 1:
-    document.getElementById("Loveswitch").textContent = "liebe";
+    document.getElementById("Loveswitch").textContent = "vermisse";
     Counter ++;
     break;
 
     case 2:
-    document.getElementById("Loveswitch").textContent = "vermisse";
+    document.getElementById("Loveswitch").textContent = "dich";
     Counter ++;
     break;
 
