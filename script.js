@@ -124,7 +124,7 @@ function quizpruefen () {
     if (formsend.responseText == 1) {
       //document.getElementById("checksend").textContent = "Success";
     }
-    else if (formsend.responseText == 2 & ((Quizinput == "Blau" || Quizinput == "blau" || Quizinput == "Blaureiher" || Quizinput == "blaureiher") && Quizinput != "")) {
+    else if (formsend.responseText == 2 && ((Quizinput == "Blau" || Quizinput == "blau" || Quizinput == "Blaureiher" || Quizinput == "blaureiher") && Quizinput != "")) {
       document.getElementById("checksend").textContent = "Sieht so aus als hättest du schon geantwortet, aber dann hast du halt noch einen Kuchen gut ;) Außer du bist ein indischer Bot, dann natürlich nicht";
     }
   });
