@@ -88,9 +88,19 @@ alert(unescape("Du%20hast%20mein%20Herz%20ber%FChrt"));
 
 }
 
+function rof (rof) {
+  if (rof) {
+    return "true";
+  }
+  else {
+    return "false";
+  }
+}
+
 function quizpruefen () {
 
   rof = ((Quizinput == "Blau" || Quizinput == "blau" || Quizinput == "Blaureiher" || Quizinput == "blaureiher") && Quizinput != "");
+  console.log("Antwort war" + if(rof){"true"} else {"false"});
 
   Quizinput = document.getElementById("reiherinput").value;
   if ((Quizinput == "Blau" || Quizinput == "blau" || Quizinput == "Blaureiher" || Quizinput == "blaureiher") && Quizinput != ""){
