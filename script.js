@@ -88,6 +88,39 @@ alert(unescape("Du%20hast%20mein%20Herz%20ber%FChrt"));
 
 }
 
+function quizpruefen () {
+
+  Quizinput = document.getElementById("reiherinput").value;
+  if (Quizinput == "Blau" || Quizinput == "blau" || Quizinput == "Blaureiher" || "blaureiher"){
+    document.getElementById("reiherinput").style.color = "green";
+    document.getElementById("quizmsg").textContent = "Falsch, er heißt Arthur Georg Friedrich. Ne Spaß, war natürlich richtig. Dann hast du mal wieder einen Kuchen gut"
+  }
+  else {
+    document.getElementById("reiherinput").style.color = "red";
+    document.getElementById("quizmsg").textContent = "Falsch, er heißt Arthur Georg Friedrich. Ne Spaß, aber leider heißt er Blaureiher."
+  }
+
+  var qparams = "?wette=" + document.querySelector('input[name="wetten"]:checked').value + "&antwort=" + Quizinput;
+
+  const formsend = new XMLHttpRequest();
+
+  formsend.open('GET', 'https://photooftheday.jeremiasjordan.de/quiz.php' + qparams);
+  formsend.send();
+
+  formsend.addEventListener('load', function (event) {
+    if (formsend.responseText == 1) {
+      //document.getElementById("checksend").textContent = "Success";
+    }
+    else if (formsend.responseText == 2) {
+      document.getElementById("checksend").textContent = "Sieht so aus als hättest du schon geantwortet, aber dann hast du halt noch einen Kuchen gut ;) Außer du bist ein indischer Bot, dann natürlich nicht";
+    }
+  });
+
+  
+  
+  
+}
+
 /*function alert1 () {
 
 alert('Jo passt');
