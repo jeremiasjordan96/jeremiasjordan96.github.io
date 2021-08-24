@@ -308,7 +308,6 @@ a {
   width: 100%;
   text-align: center;
   align-items: center;
-  animation-play-state: paused;
 
 }
 
@@ -364,6 +363,10 @@ a {
 #infocircle {
   transform: scale(1);
 	animation: pulse 2s infinite;
+}
+
+.infopanel:hover #infocircle{
+  animation-play-state: paused;
 }
 
 @keyframes pulse {
