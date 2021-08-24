@@ -90,18 +90,16 @@ alert(unescape("Du%20hast%20mein%20Herz%20ber%FChrt"));
 
 function right (rof) {
   if (rof) {
-    console.log("true");
     return "true";
   }
   else {
-    console.log("false");
     return "false";
   }
 }
 
 function quizpruefen () {
 
-  console.log("Quiz wird geprueft");
+  console.log(right());
   rof = ((Quizinput == "Blau" || Quizinput == "blau" || Quizinput == "Blaureiher" || Quizinput == "blaureiher") && Quizinput != "");
   console.log("Antwort war" + right(rof)) ;
 
