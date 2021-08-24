@@ -99,9 +99,9 @@ function right (rof) {
 
 function quizpruefen () {
 
-  rof = ((Quizinput == "Blau" || Quizinput == "blau" || Quizinput == "Blaureiher" || Quizinput == "blaureiher") && Quizinput != "");
-  console.log(right(rof));
-  console.log("Antwort war" + right(rof)) ;
+  // rof = ((Quizinput == "Blau" || Quizinput == "blau" || Quizinput == "Blaureiher" || Quizinput == "blaureiher") && Quizinput != "");
+  // console.log(right(rof));
+  // console.log("Antwort war" + right(rof)) ;
 
   Quizinput = document.getElementById("reiherinput").value;
   if ((Quizinput == "Blau" || Quizinput == "blau" || Quizinput == "Blaureiher" || Quizinput == "blaureiher") && Quizinput != ""){
