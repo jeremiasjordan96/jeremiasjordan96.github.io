@@ -362,6 +362,9 @@ a {
 #infocircle {
   transform: scale(1);
 	animation: pulse 2s infinite;
+  &:hover {
+    animation-play-state: paused;
+  }
 }
 
 @keyframes pulse {
