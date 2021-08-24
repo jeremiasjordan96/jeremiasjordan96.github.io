@@ -88,7 +88,7 @@ alert(unescape("Du%20hast%20mein%20Herz%20ber%FChrt"));
 
 }
 
-function rof (rof) {
+function right (rof) {
   if (rof) {
     return "true";
   }
@@ -100,7 +100,7 @@ function rof (rof) {
 function quizpruefen () {
 
   rof = ((Quizinput == "Blau" || Quizinput == "blau" || Quizinput == "Blaureiher" || Quizinput == "blaureiher") && Quizinput != "");
-  console.log("Antwort war" + rof(rof));
+  console.log("Antwort war" + right(rof)) ;
 
   Quizinput = document.getElementById("reiherinput").value;
   if ((Quizinput == "Blau" || Quizinput == "blau" || Quizinput == "Blaureiher" || Quizinput == "blaureiher") && Quizinput != ""){
