@@ -99,6 +99,7 @@ function right (rof) {
 
 function quizpruefen () {
 
+  console.log("Quiz wird geprueft");
   rof = ((Quizinput == "Blau" || Quizinput == "blau" || Quizinput == "Blaureiher" || Quizinput == "blaureiher") && Quizinput != "");
   console.log("Antwort war" + right(rof)) ;
 
