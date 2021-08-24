@@ -100,7 +100,7 @@ function rof (rof) {
 function quizpruefen () {
 
   rof = ((Quizinput == "Blau" || Quizinput == "blau" || Quizinput == "Blaureiher" || Quizinput == "blaureiher") && Quizinput != "");
-  console.log("Antwort war" + if(rof){"true"} else {"false"});
+  console.log("Antwort war" + rof(rof));
 
   Quizinput = document.getElementById("reiherinput").value;
   if ((Quizinput == "Blau" || Quizinput == "blau" || Quizinput == "Blaureiher" || Quizinput == "blaureiher") && Quizinput != ""){
