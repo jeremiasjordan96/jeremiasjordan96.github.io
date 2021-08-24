@@ -91,7 +91,7 @@ alert(unescape("Du%20hast%20mein%20Herz%20ber%FChrt"));
 function quizpruefen () {
 
   Quizinput = document.getElementById("reiherinput").value;
-  if (Quizinput == "Blau" || Quizinput == "blau" || Quizinput == "Blaureiher" || "blaureiher"){
+  if (Quizinput == "Blau" || Quizinput == "blau" || Quizinput == "Blaureiher" || Quizinput == "blaureiher"){
     document.getElementById("reiherinput").style.color = "green";
     document.getElementById("quizmsg").textContent = "Falsch, er heißt Arthur Georg Friedrich. Ne Spaß, war natürlich richtig. Dann hast du mal wieder einen Kuchen gut"
   }
