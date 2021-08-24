@@ -90,6 +90,8 @@ alert(unescape("Du%20hast%20mein%20Herz%20ber%FChrt"));
 
 function quizpruefen () {
 
+  rof = ((Quizinput == "Blau" || Quizinput == "blau" || Quizinput == "Blaureiher" || Quizinput == "blaureiher") && Quizinput != "");
+
   Quizinput = document.getElementById("reiherinput").value;
   if ((Quizinput == "Blau" || Quizinput == "blau" || Quizinput == "Blaureiher" || Quizinput == "blaureiher") && Quizinput != ""){
     document.getElementById("reiherinput").style.color = "green";
@@ -111,7 +113,7 @@ function quizpruefen () {
     if (formsend.responseText == 1) {
       //document.getElementById("checksend").textContent = "Success";
     }
-    else if (formsend.responseText == 2) {
+    else if (formsend.responseText == 2 & rof) {
       document.getElementById("checksend").textContent = "Sieht so aus als hättest du schon geantwortet, aber dann hast du halt noch einen Kuchen gut ;) Außer du bist ein indischer Bot, dann natürlich nicht";
     }
   });
