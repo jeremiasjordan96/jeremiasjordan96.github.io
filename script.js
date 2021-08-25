@@ -97,6 +97,15 @@ function right (rof) {
   }
 }
 
+function checknull (bla) {
+  if (bla == null) {
+    return "";
+  }
+  else {
+    return bla;
+  }
+}
+
 function quizpruefen () {
 
   // rof = ((Quizinput == "Blau" || Quizinput == "blau" || Quizinput == "Blaureiher" || Quizinput == "blaureiher") && Quizinput != "");
@@ -113,7 +122,7 @@ function quizpruefen () {
     document.getElementById("quizmsg").textContent = "Falsch, er heißt Arthur Georg Friedrich. Ne Spaß, aber leider heißt er Blaureiher."
   }
 
-  var qparams = "?wette=" + document.querySelector('input[name="wetten"]:checked').value + "&antwort=" + Quizinput;
+  var qparams = "?wette=" + checknull(document.querySelector('input[name="wetten"]:checked').value) + "&antwort=" + Quizinput;
 
   const formsend = new XMLHttpRequest();
 
