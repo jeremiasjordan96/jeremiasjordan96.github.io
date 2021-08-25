@@ -98,7 +98,7 @@ function right (rof) {
 }
 
 function checknull (bla) {
-  if (bla == null) {
+  if (bla == null || bla == undefined) {
     return "";
   }
   else {
