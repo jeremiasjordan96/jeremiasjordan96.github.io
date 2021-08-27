@@ -365,7 +365,7 @@ a {
 
 #infocircle {
   transform: scale(1);
-	animation: pulse 1s infinite;
+	/* animation: pulse 1s infinite; */
 }
 
 .infopanel:hover #infocircle{
