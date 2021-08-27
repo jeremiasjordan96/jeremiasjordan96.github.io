@@ -81,13 +81,6 @@ function changeValue () {
 
 };
 
-function herzberuehrt () {
-
-alert(unescape("Du%20hast%20mein%20Herz%20ber%FChrt"));
-
-
-}
-
 function right (rof) {
   if (rof) {
     return "true";

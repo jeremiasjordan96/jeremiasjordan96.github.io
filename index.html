@@ -4,6 +4,7 @@
   <link rel="stylesheet" href="grid24.css" type="text/css">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/kute.js/2.0.0/kute.min.js"></script>
   <script src="script.js"></script>
   <script src="https://kit.fontawesome.com/08960c7392.js" crossorigin="anonymous"></script>
   <meta name="robots" content="noindex">
@@ -32,17 +33,41 @@
 <body style="background-image: url('https://photooftheday.jeremiasjordan.de/output.php'); background-size: cover; background-position: center top;">
 
   <div class="fluid-container">
-    <div class="toolbar">
+    <div class="toolbar" id="tb">
       <ul>
+        <li><label class="toggle">
+          <input id="toggleswitch" type="checkbox">
+          <span class="roundbutton">
+            <span class="svgspan">
+              <svg class="svg1" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 398 369.4"
+                style="enable-background:new 0 0 398 369.4;" xml:space="preserve">
+                <style type="text/css">
+                  .st0 {
+                    fill: #FFFFFF;
+                  }
+                </style>
+                <path id="kreispfad" class="st0" d="M199,369.4c-57.6-0.5-110.6-27.4-144.1-69.2c-25.4-31.6-40.6-71.8-40.6-115.5C14.3,82.7,97,0,199,0
+                s184.7,82.7,184.7,184.7c0,33.7-9,65.3-24.8,92.5C326.9,332.3,267.3,369.4,199,369.4C198.4,369.4,199.6,369.4,199,369.4z">
+                <!--animate id="trs" begin="toggleswitch.change" fill="freeze" attributename="d" dur="500ms" from ="M199,369.4c-57.6-0.5-110.6-27.4-144.1-69.2c-25.4-31.6-40.6-71.8-40.6-115.5C14.3,82.7,97,0,199,0
+                s184.7,82.7,184.7,184.7c0,33.7-9,65.3-24.8,92.5C326.9,332.3,267.3,369.4,199,369.4C198.4,369.4,199.6,369.4,199,369.4z" to="M199,369.4C150.6,291.4,54.8,251,12.9,169C-3.6,131.6-5.9,84.9,17.4,49.9c40.7-66,140.5-65.8,181.9-0.6
+                C231.6-2.3,307.1-16.4,355,21.8c54.5,39.2,53.8,119.8,15.8,170.4C321.8,257.6,242.5,299.3,199,369.4L199,369.4z" /--></path>
+                <path id="herzpfad" class="st0" d="M199,369.4C150.6,291.4,54.8,251,12.9,169C-3.6,131.6-5.9,84.9,17.4,49.9c40.7-66,140.5-65.8,181.9-0.6
+                C231.6-2.3,307.1-16.4,355,21.8c54.5,39.2,53.8,119.8,15.8,170.4C321.8,257.6,242.5,299.3,199,369.4L199,369.4z"></path>
+                <path id="kreispfad2" class="st0" d="M199,369.4c-57.6-0.5-110.6-27.4-144.1-69.2c-25.4-31.6-40.6-71.8-40.6-115.5C14.3,82.7,97,0,199,0
+                s184.7,82.7,184.7,184.7c0,33.7-9,65.3-24.8,92.5C326.9,332.3,267.3,369.4,199,369.4C198.4,369.4,199.6,369.4,199,369.4z">                
+              </svg></span>
+          </span>
+        </label></li>
         <li><a href="http://brief.jeremiasjordan.de/">Gmail</a></li>
         <li><a href="#Images">Bilder</a></li>
         <li><a href="#"><i class="material-icons">apps</i></a></li>
-        <li><i class="fas fa-heart fa-lg" style="color: #CA0E0E;" onclick="herzberuehrt()"></i></li>
+        <li><i class="fas fa-heart fa-lg" id="herzicon" style="color: #CA0E0E;" onclick="herzberuehrt()"></i></li>
         <li><img src="https://i.ibb.co/Tb8b7Y3/profile.png"/></li>
       </ul>
     </div>
     <main class="home">
-      <div class="logo"></div>
+      <div class="logo" id="lgo"></div>
       <form>
         <input class="search" id="suche" type="text" placeholder="Du bist, was ich gesucht habe" style="background-color: #ffffff;"/>
         <div class="button-group">
