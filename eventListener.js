@@ -132,7 +132,7 @@ function checkbereit(first, second, wahr){
 
 function initialbereitcheck (){
   console.log("initial check");
-  checkbereit(bereit, nichtbereit);
+  checkbereit(bereit, nichtbereit,false);
 }
 
 
