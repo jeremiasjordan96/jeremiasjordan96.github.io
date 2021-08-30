@@ -53,6 +53,7 @@ function love() {
     tbarli[i].style.color = "#ffffff";
   }
   var tween = KUTE.to('#kreispfad', { path: '#herzpfad', duration: 500 }).start();
+  document.getElementById("ip").style.visibility = "visible";
   var req = new XMLHttpRequest;
   req.open('GET', 'https://photooftheday.jeremiasjordan.de/siteswitch.php?set=1');
   req.send();
@@ -66,6 +67,7 @@ function unlove () {
   }
   var tween = KUTE.to('#kreispfad', { path: '#kreispfad2', duration: 500 }).start();
   document.getElementById("lgo").style.backgroundImage = "url('https://i.ibb.co/2hmgd3k/gheartnewnew.png')";
+  document.getElementById("ip").style.visibility = "hidden";
   var req = new XMLHttpRequest;
   req.open('GET', 'https://photooftheday.jeremiasjordan.de/siteswitch.php?set=0');
   req.send();
