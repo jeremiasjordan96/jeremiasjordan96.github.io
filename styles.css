@@ -368,6 +368,10 @@ a {
 	/* animation: pulse 1s infinite; */
 }
 
+#ip {
+  visibility: hidden;
+}
+
 .infopanel:hover #infocircle{
   animation-play-state: paused;
 }
