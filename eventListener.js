@@ -48,7 +48,7 @@ var herz = document.getElementById("herzicon");
 
 function love() {
   document.body.style = "background-image: url('https://photooftheday.jeremiasjordan.de/output.php'); background-size: cover; background-position: center top;";
-  //logo.style.backgroundImage = "url('https://i.ibb.co/hX3bKRd/Asset-1.png')";    
+  logo.style.backgroundImage = "url('https://i.ibb.co/hX3bKRd/Asset-1.png')";    
   for (i=0; i<tbarli.length; i++) {
     tbarli[i].style.color = "#ffffff";
   }
