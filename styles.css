@@ -7,6 +7,7 @@ body {
   overflow: hidden;
   background-size: cover; 
   background-position: center top;
+  background-repeat: no-repeat;
 }
 
 .toolbar {
