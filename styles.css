@@ -80,6 +80,7 @@ main.home .search {
   background-repeat: no-repeat;
   background-size: 24px 24px;
   padding-left: 16px;
+  border-radius: 24px;
 }
 main.home .search:hover, main.home .search:focus {
   outline: none;
