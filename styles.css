@@ -58,7 +58,7 @@ main.home .logo {
   margin-bottom: 30px;
 }
 
-main.home .logo:after {
+/* main.home .logo:after {
   content: "My";
   display: none;
   position: absolute;
@@ -66,26 +66,71 @@ main.home .logo:after {
   top: 72px;
   color: #4285f4;
   font-size: 18px;
-}
+} */
+
 main.home .search {
+  /* height: 44px;
+  width: 584px; */
+  line-height: 44px;
+  border: none;
+  outline: none;
+  appearance: none;
+  width: 100%;
+  height: 100%;
+  margin:auto;
+  /* border: none;
+  border-radius: 2px;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16), 0 0 0 1px rgba(0, 0, 0, 0.08);
+  margin-bottom: 30px; */
+  font: 16px arial, sans-serif;
+  /* display: flex; */
+  flex: 1;
+  position: relative;
+  /* background: url(#) 540px center;
+  background-repeat: no-repeat;
+  background-size: 24px 24px;
+  padding-left: 16px;
+  padding-right: 16px;
+  border-radius: 24px; */
+}
+
+main.home .search:hover, .search:focus{
+  box-shadow: none;
+}
+
+#inputcontainer {
   height: 44px;
   width: 584px;
-  line-height: 44px;
   border: none;
   border-radius: 2px;
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16), 0 0 0 1px rgba(0, 0, 0, 0.08);
   margin-bottom: 30px;
-  font: 16px arial, sans-serif;
-  background: url(#) 540px center;
+  /* background: url(#) 540px center; */
+  background-color: white;
   background-repeat: no-repeat;
   background-size: 24px 24px;
-  padding-left: 16px;
+  padding-left: 20px;
+  padding-right: 16px;
   border-radius: 24px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  display: flex;
 }
-main.home .search:hover, main.home .search:focus {
+
+main.home .inputcontainer:hover, main.home #inputcontainer:focus {
   outline: none;
   box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.16), 0 0 0 1px rgba(0, 0, 0, 0.08);
 }
+
+.heartsearchlogo {
+  height: 15px;
+  width: 15px;
+  position: relative;
+  margin: auto;
+  margin-right: 10px;
+  color: #9aa0a6;
+}
+
 main.home .button {
   background-image: -webkit-linear-gradient(top, #f5f5f5, #f1f1f1);
   -webkit-border-radius: 2px;
