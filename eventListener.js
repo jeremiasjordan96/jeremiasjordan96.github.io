@@ -63,6 +63,7 @@ function setBackground(){
   }
   else if(contenttype == "video/mp4"){
     console.log("Content-Type: Video");
+    document.getElementById("bgvideo").style.visibility = "visible";
     var video = document.getElementById("bgvideo");
     var source = document.createElement('source');
     source.setAttribute('src', bgurl);
