@@ -7,7 +7,7 @@ var infopanel = document.getElementById("infop");
 var infocircle = document.getElementById("infocircle");
 var infocontent = document.getElementById("infoc");
 var i;
-document.cookie = "Du = Das Beste, was mir je passiert ist";
+document.cookie = "Du=Das Beste, was mir je passiert ist; path=/";
 
 
 const infoContentReq = new XMLHttpRequest();
