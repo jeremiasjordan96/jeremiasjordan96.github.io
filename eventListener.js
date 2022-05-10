@@ -52,7 +52,7 @@ function setBackground(){
   var bgurl = "https://photooftheday.jeremiasjordan.de/output.php";
   var contenttype;
   var xhttp = new XMLHttpRequest();
-  xhttp.open('HEAD', bgurl);
+  xhttp.open('GET', bgurl);
 
   xhttp.onreadystatechange = function () {
     if (this.readyState == this.DONE) {
