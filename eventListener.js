@@ -47,34 +47,36 @@ var tbarli = document.querySelectorAll(".toolbar li");
 var herz = document.getElementById("herzicon");
 
 function setBackground(){
+
   console.log("setbg aufgerufen");
   var bgurl = "https://photooftheday.jeremiasjordan.de/output.php";
   var contenttype;
   var xhttp = new XMLHttpRequest();
   xhttp.open('HEAD', bgurl);
+
   xhttp.onreadystatechange = function () {
     if (this.readyState == this.DONE) {
         contenttype = this.getResponseHeader("Content-Type");
     }
+  };
   
-  if (contenttype == "image/jpeg"){
-    console.log("Content-Type: Image");
-    document.body.style = "background-image: url('https://photooftheday.jeremiasjordan.de/output.php'); background-size: cover; background-position: center top;";
-  }
-  else if(contenttype == "video/mp4"){
-    console.log("Content-Type: Video");
-    document.getElementById("bgvideo").style.visibility = "visible";
-    var video = document.getElementById("bgvideo");
-    var source = document.createElement('source');
-    source.setAttribute('src', bgurl);
-    source.setAttribute('type', 'video/mp4');
-    video.appendChild(source);
-    video.play();
-  }
-  else {
-    console.log("No compatible content type");
-  }
-};  
+    if (contenttype == "image/jpeg"){
+      console.log("Content-Type: Image");
+      document.body.style = "background-image: url('https://photooftheday.jeremiasjordan.de/output.php'); background-size: cover; background-position: center top;";
+    }
+    else if(contenttype == "video/mp4"){
+      console.log("Content-Type: Video");
+      document.getElementById("bgvideo").style.visibility = "visible";
+      var video = document.getElementById("bgvideo");
+      var source = document.createElement('source');
+      source.setAttribute('src', bgurl);
+      source.setAttribute('type', 'video/mp4');
+      video.appendChild(source);
+      video.play();
+    }
+    else {
+      console.log("No compatible content type");
+    }
 }
 
 function love() {
