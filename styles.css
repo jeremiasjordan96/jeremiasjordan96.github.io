@@ -516,4 +516,5 @@ input:checked + .roundbutton > .svgspan  {
   min-height: 56.25vw; /* 100 * 9 / 16 */
   visibility: hidden;
   z-index: -1;
+  position: absolute;
 }
