@@ -46,9 +46,27 @@ var logo = document.getElementById("lgo");
 var tbarli = document.querySelectorAll(".toolbar li");
 var herz = document.getElementById("herzicon");
 
+function setBackground(){
+  var bgurl = "https://photooftheday.jeremiasjordan.de/output.php";
+  var contenttype;
+  var xhttp = new XMLHttpRequest();
+  xhttp.open('HEAD', bgurl);
+  xhttp.onreadystatechange = function () {
+    if (this.readyState == this.DONE) {
+        contenttype = this.getResponseHeader("Content-Type");
+    }
+  
+  if (contenttype == "image/jpeg"){
+    document.body.style = "background-image: url('https://photooftheday.jeremiasjordan.de/output.php'); background-size: cover; background-position: center top;";
+  }
+  else if(contenttype == "video/mp4"){
+    document.getElementById("bgvideo") = "https://photooftheday.jeremiasjordan.de/output.php";
+  }
+};  
+}
 
 function love() {
-  document.body.style = "background-image: url('https://photooftheday.jeremiasjordan.de/output.php'); background-size: cover; background-position: center top;";
+  setBackground();
   logo.style.backgroundImage = "url('https://i.ibb.co/hX3bKRd/Asset-1.png')";    
   for (i=0; i<tbarli.length; i++) {
     tbarli[i].style.color = "#ffffff";
