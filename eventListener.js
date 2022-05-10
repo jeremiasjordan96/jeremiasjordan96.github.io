@@ -58,7 +58,6 @@ function setBackground(){
     if (this.readyState == this.DONE) {
         contenttype = this.getResponseHeader("Content-Type");
     }
-  };
   
     if (contenttype == "image/jpeg"){
       console.log("Content-Type: Image");
@@ -77,6 +76,9 @@ function setBackground(){
     else {
       console.log("No compatible content type");
     }
+};  
+xhttp.send();
+
 }
 
 function love() {
