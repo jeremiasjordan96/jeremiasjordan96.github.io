@@ -47,6 +47,7 @@ var tbarli = document.querySelectorAll(".toolbar li");
 var herz = document.getElementById("herzicon");
 
 function setBackground(){
+  console.log("setbg aufgerufen");
   var bgurl = "https://photooftheday.jeremiasjordan.de/output.php";
   var contenttype;
   var xhttp = new XMLHttpRequest();
