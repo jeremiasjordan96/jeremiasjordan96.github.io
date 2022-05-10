@@ -78,7 +78,7 @@ function setBackground(){
     
     }
   };  
-xhttp.send();
+  xhttp.send();
 
 }
 
