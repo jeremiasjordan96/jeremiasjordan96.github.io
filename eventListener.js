@@ -62,6 +62,9 @@ function setBackground(){
   else if(contenttype == "video/mp4"){
     document.getElementById("bgvideo") = "https://photooftheday.jeremiasjordan.de/output.php";
   }
+  else {
+    console.log("No compatible content type");
+  }
 };  
 }
 
