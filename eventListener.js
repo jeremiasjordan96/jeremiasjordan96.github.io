@@ -57,6 +57,7 @@ function setBackground(){
   xhttp.onreadystatechange = function () {
     if (this.readyState == this.DONE) {
         contenttype = this.getResponseHeader("Content-Type");
+        console.log(contenttype);
         if (contenttype == "image/jpeg"){
           console.log("Content-Type: Image");
           document.body.style = "background-image: url('https://photooftheday.jeremiasjordan.de/output.php'); background-size: cover; background-position: center top;";
