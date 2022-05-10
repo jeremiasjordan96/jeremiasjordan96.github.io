@@ -60,7 +60,14 @@ function setBackground(){
     document.body.style = "background-image: url('https://photooftheday.jeremiasjordan.de/output.php'); background-size: cover; background-position: center top;";
   }
   else if(contenttype == "video/mp4"){
-    document.getElementById("bgvideo") = "https://photooftheday.jeremiasjordan.de/output.php";
+    var video = document.getElementById("bgvideo");
+    var source = document.createElement('source');
+
+    source.setAttribute('src', bgurl);
+    source.setAttribute('type', 'video/mp4');
+
+    video.appendChild(source);
+    video.play();
   }
   else {
     console.log("No compatible content type");
