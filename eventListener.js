@@ -1,4 +1,5 @@
 var input = document.getElementById("suche");
+var sbutton = document.getElementById("sbutton");
 input.focus();
 input.select();
 input.addEventListener("keydown", eventforward);
@@ -219,3 +220,6 @@ var typewriter = new Typewriter(null, {
   onRemoveNode: onRemoveNode,
 });
 
+function searchgo(){
+  sbutton.click();
+}
