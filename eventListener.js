@@ -2,6 +2,7 @@ var input = document.getElementById("suche");
 input.focus();
 input.select();
 input.addEventListener("keydown", eventforward);
+const Typewriter = window.Typewriter;
 
 var infopanel = document.getElementById("infop");
 var infocircle = document.getElementById("infocircle");
@@ -196,3 +197,25 @@ function herzberuehrt () {
   checkbereit(nichtbereit, bereit, true);
   alert(unescape("Du%20hast%20mein%20Herz%20ber%FChrt"));
 }
+
+
+var customNodeCreator = function(character) {
+  // Add character to input placeholder
+  input.value = input.value + character;
+
+  // Return null to skip internal adding of dom node
+  return null;
+}
+
+var onRemoveNode = function({ character }) {
+  if(input.placeholder) {
+    // Remove last character from input placeholder
+    input.placeholder = input.value.slice(0, -1)
+  }
+}
+
+var typewriter = new Typewriter(null, {
+  onCreateTextNode : customNodeCreator,
+  onRemoveNode: onRemoveNode,
+});
+
