@@ -343,8 +343,7 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
-  max-height: 40%;
-
+  height: 40%;
 
 }
 
@@ -382,11 +381,8 @@ a {
 
 .infopanel:hover .infocontent {
 
-  flex: 3;
-  padding: 5%;
   text-align: left;
   visibility: visible;
-  overflow-y: scroll;
 
 }
 
@@ -394,8 +390,12 @@ a {
 
   flex: 3;
   padding: 5%;
+  display: block;
   text-align: justify;
   visibility: hidden;
+  overflow-y: auto;
+  height: 100%;
+  box-sizing: border-box;
 
 }
 
@@ -563,4 +563,12 @@ input:checked + .roundbutton > .svgspan  {
 }
 .buttoncontainer button:active:after {
   width: 100%;
+}
+
+#infopara {
+  overflow: auto;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  height: 100%;
+  box-sizing: border-box;
 }
